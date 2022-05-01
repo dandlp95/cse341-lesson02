@@ -3,3 +3,9 @@ GET http://localhost:3000/contacts
 ###
 
 GET http://localhost:3000/contacts/626d7dae645f40213bb0ad0b
+
+###
+GET https://cse341-lesson02.herokuapp.com/contacts
+
+###
+GET https://cse341-lesson02.herokuapp.com/contacts/626d7dae645f40213bb0ad0b
