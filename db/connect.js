@@ -14,9 +14,7 @@ const initDatabase = () => {
         _collection = client.db("contacts").collection("contacts");
 
         console.log('Database  connected successfully');
-    
     });
-
 };
 
 const getCollection = () => {
