@@ -15,7 +15,7 @@ mongoose
         
         app
             .use(express.json())
-            .use(cors)
+            .use(cors())
             .use('/', require('./routes'));
 
         app.listen(PORT, ()=>{
