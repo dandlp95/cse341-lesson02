@@ -1,6 +1,4 @@
-const routes = require('express').Router();
 const contactModel = require('../db/model')
-const ObjectId = require('mongodb').ObjectId;
 
 const getAllContacts = async function (req, res) {
 
@@ -58,7 +56,6 @@ const deleteContact = function (req, res){
             }
             else {
                 res.status(200).send(docs)
-                res.send(docs);
             }}
     })
 }

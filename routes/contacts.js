@@ -1,6 +1,6 @@
 const routes = require('express').Router();
-const contactModel = require('../db/model')
-const ObjectId = require('mongodb').ObjectId;
+// const contactModel = require('../db/model')
+// const ObjectId = require('mongodb').ObjectId;
 const {
     getAllContacts, 
     getContact, 
