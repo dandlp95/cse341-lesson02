@@ -1,11 +1,68 @@
+
+### Get all contacts
 GET http://localhost:3000/contacts
 
-###
+### Get contact
 
 GET http://localhost:3000/contacts/626d7dae645f40213bb0ad0b
+
+### Add contact
+POST http://localhost:3000/contacts/add_contact HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "James",
+    "lastName": "Bond",
+    "email": "007@gmail.com",
+    "favColor": "red",
+    "birthDay": "1-1-1995"
+    }
+
+### edit contact
+PUT http://localhost:3000/contacts/edit_contact/62763e0d251a48cf52c7d523 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Claudia",
+    "lastName": "Maldonado",
+    "email": "007@gmail.com",
+    "favColor": "red",
+    "birthDay": "1-1-1995"
+}
+
+### delete contact
+DELETE http://localhost:3000/contacts/delete/6277347dabc74e2242f8261e HTTP/1.1
+
 
 ###
 GET https://cse341-lesson02.herokuapp.com/contacts
 
 ###
 GET https://cse341-lesson02.herokuapp.com/contacts/626d7dae645f40213bb0ad0b
+
+###
+POST https://cse341-lesson02.herokuapp.com/contacts/add_contact HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Sam",
+    "lastName": "Smith",
+    "email": "SS@gmail.com",
+    "favColor": "red",
+    "birthDay": "1-1-1995"
+}
+
+###
+PUT https://cse341-lesson02.herokuapp.com/contacts/edit_contact/626d7dae645f40213bb0ad0b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "email": "spiderman@gmail.com",
+    "favColor": "red",
+    "birthDay": "1-1-1995"   
+}
+
+###
+DELETE https://cse341-lesson02.herokuapp.com/contacts/delete/626d82c7645f40213bb0ad0c HTTP/1.1
