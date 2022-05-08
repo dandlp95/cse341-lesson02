@@ -15,7 +15,10 @@ mongoose
         
         app
             .use(express.json())
-            .use(cors())
+            .use((req, res, next) => {
+                res.setHeader('Access-Control-Allow-Origin', '*');
+                next();
+              })
             .use('/', require('./routes'));
 
         app.listen(PORT, ()=>{
@@ -23,7 +26,6 @@ mongoose
     });
     })
 
-// connection.initDatabase();
 
 
 
