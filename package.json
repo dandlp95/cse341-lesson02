@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node swagger.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "swagger-autogen": "node ./swagger.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "homepage": "https://github.com/dandlp95/cse341-lesson02#readme",
   "devDependencies": {
     "jshint": "^2.13.4",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "swagger-autogen": "^2.21.1",
+    "swagger-ui-express": "^4.3.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
