@@ -6,7 +6,7 @@ const doc = {
     description: "Description",
   },
   host: "cse341-lesson02.herokuapp.com",
-  schemes: ["http"],
+  schemes: ["https"],
   tags: [
     {
       name: "Contacts",
